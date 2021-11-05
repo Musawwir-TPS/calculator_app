@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ZeroButtonWidget extends StatelessWidget {
-  const ZeroButtonWidget({Key? key}) : super(key: key);
+  const ZeroButtonWidget(this.onPressFun, {Key? key}) : super(key: key);
+  final Function onPressFun;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,9 @@ class ZeroButtonWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headline4,
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          onPressFun('0');
+        },
       ),
     );
   }

@@ -25,7 +25,7 @@ class NumberButtonWidget extends StatelessWidget {
               .copyWith(color: titleColor ?? Colors.black),
         ),
         onPressed: () {
-          onPressFun();
+          onPressFun(title);
         },
       ),
     );

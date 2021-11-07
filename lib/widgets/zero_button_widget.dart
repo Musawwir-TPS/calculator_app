@@ -15,7 +15,7 @@ class ZeroButtonWidget extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(45.0),
             ),
-            primary: Colors.white),
+            primary: Theme.of(context).primaryColor),
         child: Align(
           alignment: Alignment.centerLeft,
           child: Text(
